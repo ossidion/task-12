@@ -1,4 +1,23 @@
-num_list = ['1', '5', '8', '14', '25', '31']
-new_num_list_ints = [int(element) for element in num_list]
-by_two_num_list = [int(element)*2 for element in num_list]
-print(by_two_num_list)
+menu = ["Cinnamon Swirl", "Rockie Road", "Blueberry Muffin", "Chocolate Brownie"]
+
+stock = {menu[0]: 5,
+         menu[1]: 2,
+         menu[2]: 1,
+         menu[3]: 6
+        }
+
+price = {menu[0]: 3,
+         menu[1]: 2,
+         menu[2]: 2.5,
+         menu[3]: 2.75
+        }
+
+total_items = [stock[i] * price[i] for i in menu]
+
+total_stock = 0
+
+for i in total_items:
+    total_stock = total_stock + i
+
+print(total_stock)
+
